@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <DebugType>portable</DebugType>
+    <OutputType>WinExe</OutputType>
+    <ApplicationIcon />
+    <StartupObject />
+    <AssemblyName>Haxiot.Xon.Micro.Connect.Tests</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+
+    <PackageReference Include="NUnit" Version="3.11.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
+    <PackageReference Include="ServiceStack" Version="5.8.0" />
+    <PackageReference Include="ServiceStack.Kestrel" Version="5.8.0" />
+    <PackageReference Include="ServiceStack.OrmLite.Core" Version="5.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Account\Account.ServiceInterface\Account.ServiceInterface.csproj" />
+    <ProjectReference Include="..\..\Account\Account.ServiceModel\Account.ServiceModel.csproj" />
+    <ProjectReference Include="..\Connect.ServiceInterface\Connect.ServiceInterface.csproj" />
+    <ProjectReference Include="..\Connect.ServiceModel\Connect.ServiceModel.csproj" />
+    <ProjectReference Include="..\Connect\Connect.csproj" />
+  </ItemGroup>
+
+</Project>
